@@ -1,0 +1,810 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Yokko - Template Help</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="layout">
+	<aside id="menu">
+        <div class="logo">
+            <a href="#">Yokko</a>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li>
+                    <a href="#getting-started">Getting Started</a>
+                    <ul>
+                        <li><a href="#requirements">Requirements</a>
+                        <li><a href="#installation">Installation</a>
+                    </ul>
+                </li>
+                <li><a href="#preloader">Preloader</a></li>
+                <li><a href="#favicon">Favicon</a></li>
+                <li>
+                    <a href="#grid-system">Modular Grid</a>
+                    <ul>
+                        <li><a href="#twboot">Twitter Bootstrap</a>
+                        <li><a href="#highlights">Highlights</a>
+                        <li><a href="#grid-aligned">Alignment</a>
+                    </ul>
+                </li>
+                <li><a href="#page-header">Header</a></li>
+                <li><a href="#page-footer">Footer</a></li>
+                <li>
+                    <a href="#sliders">Sliders</a>
+                    <ul>
+                        <li><a href="#oneslider">One-image</a></li>
+                        <li><a href="#ribbon">Ribbon</a></li>
+                        <li><a href="#msnrslider">Masonry Slider</a></li>
+                        <li><a href="#logos">Logotypes Slider</a></li>
+                        <li><a href="#pricing">Pricing Slider</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                    <ul>
+                        <li><a href="#postaside">Post with Sidebar</a></li>
+                        <li><a href="#audioplayer">Audio</a></li>
+                        <li><a href="#videoplayer">Video</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#ecommerce">Ecommerce</a>
+                    <ul>
+                        <li><a href="#rating">Rating</a></li>
+                        <li><a href="#prodquantity">Product Quantity</a></li>
+                    </ul>
+                </li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#magnific">Magnific Gallery</a></li>
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#gmaps">Google Maps</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#errorpage">Error Pages</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#scrtop">Scrolltop Button</a></li>
+                <li><a href="#font-settings">Fonts settings</a></li>
+            </ul>
+        </div>
+	</aside>
+    <!-- /#menu -->
+
+	<section id="main">
+        <nav class="slideshow-bar">
+            <a id="menu-link" href="#menu"></a>
+            <a id="scrolltop" href="#"></a>
+        </nav>
+        <!-- /.slideshow-bar -->
+
+        <header class="header content">
+            <div>
+                <h1>Yokko - Documentation</h1>
+                <small class="version">Version 1.0</small>
+                <h4>Cross Browser, High Quality and Responsive Multipurpose HTML Template.</h4>
+                <p>Thank you very much for purchasing our template. It is built with the latest HTML5 and CSS3 technologies, but at the same time it is also made compatible with older browser versions. If you have any questions that aren’t covered in this article, please feel free to email us on our user page, you can find the contact form <a href="http://themeforest.net/user/Aisconverse" target="_blank">here</a>.</p>
+                <p>Don’t forget to rate this template, it helps us improve our products. <img src="images/rate.png" alt=""></p>
+                <p>We invite you to view our <a href="http://themeforest.net/user/Aisconverse/portfolio" target="_blank">portfolio</a>.</p>
+                <h4>Thanks so much!</h4>
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <section id="getting-started" class="content slide">
+            <div>
+                <h2>Getting Started</h2>
+                <h4 id="requirements">Requirements</h4>
+                <p>For installing this template you need to make sure that you have the following extensions on your webserver. You will need to contact your webhost if the following requirements are missing.</p>
+                <ul>
+                    <li>PHP 5.2+;</li>
+                    <li>PHP Mail support;</li>
+                    <li>Enabling JavaScript in the web browser.</li>
+                </ul>
+                <h4 id="installation">Installation</h4>
+                <p>Unzip the downloaded files to the local disk on your computer. Inside the extracted folder there will be contents and folder with documentation. Copy all contents, except from folder with documentation, to your server via FTP client.</p>
+                <p class="warning"><strong>In this archive will not images, that you can see in demo pages, every images were replaced by <a href="http://placehold.it/" target="_blank">placehold.it</a> service.</strong></p>
+            </div>
+        </section>
+        <!-- #getting-started -->
+
+        <section id="preloader" class="content slide">
+            <div>
+                <h2>Preloader</h2>
+                <p>Before the main contents of the website are loaded, there is an opportunity to show the preloader of the site. It can be any image, a gif-animated icon. You can change the path to the image.</p>
+                <a href="../css/style.css" class="path" target=_blank>css/style.css</a>
+                <pre class="snippet" data-language="js">
+                    831 : #status {  background-image: url(../images/preloader.gif); }
+                </pre>
+                <p>If you don’t need the preloader, you can delete div with id <strong>preloader</strong>.</p>
+                <pre class="snippet" data-language="html">
+                    <!-- Preloader -->
+                    &lt;div id=&quot;preloader&quot;&gt;
+                    &emsp;&lt;div id=&quot;status&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                    &lt;/div&gt;
+                </pre>
+            </div>
+        </section>
+        <!-- #preloader -->
+
+        <section id="favicon" class="content slide">
+            <div>
+                <h2>Favicon</h2>
+                <p>To change the favicon of your site, you need to load a new image in a site root or to point out a new address of the image.</p>
+                <pre class="snippet" data-language="js">
+                    7 : &lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+                </pre>
+            </div>
+        </section>
+        <!-- /#favicon -->
+
+        <section id="grid-system" class="content slide">
+            <div>
+                <h2>Modular grid</h2>
+                <p>The Template is built on the system by using a 12-column markup. With the help of the given system you can create almost any modular grid and insert a necessary content in created modules.</p>
+                <h3 id="twboot">Twitter Bootstrap</h3>
+                <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. All features and opportuntes you can use in this project. If you need create new table or add accordeon or use navbar menu, just go to the appropriate section in <a href="http://getbootstrap.com/css/" target="_blank">Bootstraps documentation</a> copy and paste example.</p>
+                <p>Of course, there are many other features you do not look for in twitter bootstrap this project has. A great amount of different sliders, counters, bars, chars, pricing table and so on.</p>
+                <h3 id="highlights">Highlight</h3>
+                <p>To highlight one of the columns with another color  it’s necessary to add some of classes:</p>
+                <ul>
+                    <li>.bg-info;</li>
+                    <li>.bg-primary;</li>
+                    <li>.bg-default;</li>
+                    <li>or use standart bootstrap <a href="http://getbootstrap.com/css/#helper-classes" target="_blank">helper class</a>.</li>
+                </ul>
+                <pre class="snippet" data-language="html">
+                    <div class="col-md-4 bg-info">
+                        &emsp;<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                    </div>
+                </pre>
+                <p>You can add a padding as a one-pixel separator between two vertical blocks. To do it you need to add a <code>&lt;hr/&gt;</code> tag:</p>
+                <pre class="snippet" data-language="js">
+                    <div class="col-xs-12">
+                        &emsp;<p>Some text bla-bla…</p>
+                        &emsp;<hr/>
+                        &emsp;<p>Some text bla-bla…</p>
+                    </div>
+                </pre>
+                <p>By default it has transparent background color and it adds only padding, but you can stylize it.</p>
+                <a href="../css/style.css" class="path" target=_blank>css/style.css</a>
+                <pre class="snippet" data-language="js">
+                    284 : hr {
+                    &emsp;&emsp;border-color: #E5E5E5;
+                    &emsp;&emsp;max-width: 1000px;
+                    }
+                </pre>
+                <h3 id="grid-aligned">Alignment</h3>
+                <p>To adjust the content inside a structural element it’s necessary to add the classes <strong>text-left</strong>,<strong>text-center</strong> or <strong>text-right</strong>.</p>
+                <p>To align by vertical you should use like-table structure with <strong>divtable</strong> and <strong>divcell</strong> classes, here an example (or in the <a href="../404.html" target="_blank">error404 page</a>):</p>
+                <pre class="snippet" data-language="js">
+                    <div class="divtable">
+                        &emsp;<div class="divcell">
+                        &emsp;&emsp;<p>Vertical aligned Text with any height</p>
+                        &emsp;</div>
+                    </div>
+                </pre>
+                <p class="warning">Also class <strong>equal</strong> sets up the same height to all inserted blocks, but with some paddings and feature. In the <a href="../pricing.html" target="_blank">Pricing</a> page you can see an example.</p>
+            </div>
+        </section>
+        <!-- /#grid-system -->
+
+        <section id="page-header" class="content slide">
+            <div>
+                <h2>Header</h2>
+                <p>A <code>header</code> tag with the class <strong>header</strong> creates a header which is on top of the template. It has a 12-column structure like all the sections on the site.</p>
+                <p class="warning">Header can not contain <code>header</code> and <code>footer</code> tags.</p>
+                <p>The menu has many links with dropdown lists. To open the page in a new tab, use <code>target="_blank"</code> for each link. In adaptive, mainmenu transforms to icon. When you click on it, menu will appear from the right side.</p>
+                <p>Header also contain <strong>product cart</strong> with dropdown list of items. You may add new products, customize styles.</p>
+                <p class="warning">To add sticky effect for header, add <code>sticky</code> class:</p>
+                <pre class="snippet" data-language="js">
+                    &lt;!-- HEADER --&gt;
+                    &lt;header class=&quot;header sticky&quot;&gt;
+                    …
+                </pre>
+                <p>You can change background color or add/remove shadow:</p>
+                <pre class="snippet" data-language="css">
+                    908: .header.navbar-fixed-top{
+                    &emsp;background-color: #fff;
+                    &emsp;box-shadow: 0 3px 5px rgba(0,0,0,.1);
+                    }
+                </pre>
+            </div>
+        </section>
+        <!-- #page-header -->
+
+        <section id="page-footer" class="content slide">
+            <div>
+                <h2>Footer</h2>
+                <p>The footer of the site is created with the help of a <code>footer</code> tag with the class <strong>footer</strong>. It also contains a 12-column structure and can contain various blocks. The footer of the site <strong>can’t</strong> contain <code>header</code> and <code>footer</code> tags in itself.</p>
+            </div>
+        </section>
+        <!-- /#page-footer -->
+
+        <section id="sliders" class="content slide">
+            <div>
+                <h2>Sliders</h2>
+                <p>Sliders allow you to save space, animate and decorate your site. In the template there can be several sliders with different settings, which not depends on bootstrap settings.</p>
+                <p class="warning">The slider occupies the whole section by adding a special class <strong>slider</strong> or <strong>oneslider</strong> (for one-image gallery) to the parent block and some additional markup in it. In each of them there can be 12-columns system with various elements. For every sliders we use <a href="http://docs.dev7studios.com/caroufredsel-old/" target="_blank">carouFredSel</a> slider. jQuery.carouFredSel is a plugin that turns any kind of HTML element into a carousel. It can scroll one or multiple items simultaneously, horizontal or vertical, infinite and circular, automatically or by user interaction. And it's responsive too.</p>
+                <h3 id="oneslider">One-image Gallery</h3>
+                <p>A responsive one-image gallery has a markup:</p>
+
+                    <pre class="snippet" data-language="js">
+                        <!-- SLIDER -->
+                        <article class="oneslider slider">
+                            &emsp;<div class="carouwrap clearfix">
+                            &emsp;&emsp;<ul>
+                            &emsp;&emsp;&emsp;<li>
+                            &emsp;&emsp;&emsp;&emsp;<a href="" title="Sloan Upholstered Chair"><img src="http://placehold.it/351x150" alt=""></a>
+                            &emsp;&emsp;&emsp;</li>
+                            &emsp;&emsp;&emsp;<li>
+                            &emsp;&emsp;&emsp;&emsp;<a href="" title="Sloan Upholstered Chair"><img src="http://placehold.it/351x150" alt=""></a>
+                            &emsp;&emsp;&emsp;</li>
+                            &emsp;&emsp;</ul>
+                            &emsp;&emsp;<div class="slidebar">
+                            &emsp;&emsp;&emsp;<nav class="nav-pages"></nav>
+                            &emsp;&emsp;&emsp;<a href="#" class="arrow prev"><i></i></a>
+                            &emsp;&emsp;&emsp;<a href="#" class="arrow next"><i></i></a>
+                            &emsp;&emsp;</div>
+                            &emsp;</div>
+                        </article>
+                        <!-- /.slider -->
+                    </pre>
+                <ol>
+                    <li>We add class <strong>oneslider</strong> into a div block;</li>
+                    <li>you can add/change 3 data-attribute parameters in this div:
+                        <ul>
+                            <li><code>data-fx</code> - the slider flip effect, crossfade slide, directscroll, fade;</li>
+                            <li><code>data-auto</code> - autoscroll, true or false;</li>
+                            <li><code>data-circular</code> - circular or not, true or false.</li>
+                        </ul>
+                    </li>
+                    <li>create a familiar Section structure;</li>
+                    <li><code>ul</code> – an marked list with slides;</li>
+                    <li>Sliders <code>li</code> elements can contain align classes;</li>
+                    <li>There is a content with a 12-column markup and a random set of elements in the slider;</li>
+                    <li>Also the div <code>.slidebar</code> can contain two links – switching slides back and slider pagination with the class <code>.nav-pages</code>.</li>
+                </ol>
+                <p class="question">Cursors and solid circles are not obligatory. If the true definition is set up in the <code>data-auto</code> attribute, it means that slides will switch in a specified period of time without these elements. This period of time and the speed of switching can be changed.</p>
+                <a href="../js/custom.js" class="path" target=_blank>js/custom.js</a>
+                <pre class="snippet" data-language="js">
+                    6 : sliderInterval: 6000,
+                    7 : sliderSpeed: 600,
+                </pre>
+                <h3 id="ribbon">Ribbon carousel</h3>
+                <p>Restricting the number of visible items to a minimum and maximum amount. You should just add obligatory class <code>ribbon</code> to use this type of slider. Markup and an an example you can see in <a href="../start_agency.html" target="_blank">Start Agency</a> page.</p>
+                <h3 id="msnrslider">Slider with Masonry effect</h3>
+                <p>In the <a href="../about.html" target="_blank">About</a> page you may see slider with <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> effect. Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet. Masonry works on a container element with a group of similar child items. All sizing of items is handled by your CSS. Let's have a look an example:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- SLIDER -->
+                    <article class="slider msnr-container oneslider">
+                        &emsp;<div class="container">
+                        &emsp;&emsp;<div class="carouwrap clearfix">
+                        &emsp;&emsp;&emsp;<ul>
+                        &emsp;&emsp;&emsp;&emsp;<li class="masonry-wrap">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office"><img src="http://placehold.it/351x150"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office 2"><img src="http://placehold.it/151x250"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office 3"><img src="http://placehold.it/351x350"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;</li>
+                        &emsp;&emsp;&emsp;&emsp;<li class="masonry-wrap">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office"><img src="http://placehold.it/351x150"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office 2"><img src="http://placehold.it/151x250"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="msnr">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" title="Our office 3"><img src="http://placehold.it/351x350"></a>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;</li>
+                        &emsp;&emsp;&emsp;</ul>
+                        &emsp;&emsp;&emsp;<div class="slidebar">
+                        &emsp;&emsp;&emsp;&emsp;<nav class="nav-pages"></nav>
+                        &emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;</div>
+                        &emsp;</div>
+                    </article>
+                    <!-- /.slider -->
+                </pre>
+                <ol>
+                    <li>We add class <strong>oneslider</strong> into a div block and add obligatory class <code>msnr-container</code>;</li>
+                    <li><code>ul</code> – an marked list with slides;</li>
+                    <li>Sliders <code>li</code> elements can contain align classes and every <code>li</code> element has obligatory class <code>masonry-wrap</code>;</li>
+                    <li>Every block in <code>masonry-wrap</code> wrapper has additional but also obligatory class <code>msnr</code>, which says us, that this block will have needed position on parent div.</li>
+                    <li>Also the div <code>.slidebar</code> can contain slider pagination with the class <code>.nav-pages</code>.</li>
+                </ol>
+                <h3 id="logos">Logotypes carousel</h3>
+                <p>In general we can use slider with logotypes or some another custom blocks. The simpliest way to add this:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- SLIDER -->
+                    <article class="container slider logos text-center">
+                        &emsp;<div class="carouwrap clearfix">
+                        &emsp;&emsp;<div class="col-sm-10 col-sm-offset-1">
+                        &emsp;&emsp;&emsp;<ul>
+                        &emsp;&emsp;&emsp;&emsp;<li><a href=""><img src="http://placehold.it/351x150" alt=""></a></li>
+                        &emsp;&emsp;&emsp;&emsp;<li><a href=""><img src="http://placehold.it/351x150" alt=""></a></li>
+                        &emsp;&emsp;&emsp;&emsp;<li><a href=""><img src="http://placehold.it/351x150" alt=""></a></li>
+                        &emsp;&emsp;&emsp;</ul>
+                        &emsp;&emsp;</div>
+                        &emsp;&emsp;<div class="slidebar">
+                        &emsp;&emsp;&emsp;<a href="#" class="arrow prev"><i></i></a>
+                        &emsp;&emsp;&emsp;<a href="#" class="arrow next"><i></i></a>
+                        &emsp;&emsp;&emsp;<nav class="nav-pages"></nav>
+                        &emsp;&emsp;</div>
+                        &emsp;</div>
+                    </article>
+                    <!-- /.slider -->
+                </pre>
+                <h3 id="pricing">Pricing</h3>
+                <p>We have <a href="../pricing.html">page with prices</a>. There we use also unique slider with obligatory class <code>pricing</code> for slider and some custom markup. Let's look on it:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- CONTAINER -->
+                    <div class="container slider pricing oneslider text-center">
+                        &emsp;<div class="carouwrap clearfix">
+                        &emsp;&emsp;<ul>
+                        &emsp;&emsp;&emsp;<li data-period="Monthly">
+                        &emsp;&emsp;&emsp;&emsp;<div class="equal">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="col-sm-6">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p>Some Content</p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;<div class="col-sm-4 bg-info">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="sticker sticker-sm sticker-default"><span>most popular</span></div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p>Some Content</p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;</li>
+                        &emsp;&emsp;&emsp;<li data-period="Yearly">
+                        &emsp;&emsp;&emsp;&emsp;<div class="equal">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="col-sm-6">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p>Some Content</p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;<div class="col-sm-4 bg-info">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p>Some Content</p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;&emsp;</div>
+                        &emsp;&emsp;&emsp;</li>
+                        &emsp;&emsp;</ul>
+                        &emsp;&emsp;<div class="slidebar">
+                        &emsp;&emsp;&emsp;<nav class="nav-pages"></nav>
+                        &emsp;&emsp;</div>
+                        &emsp;</div>
+                    </div>
+                    <!-- /.container -->
+                </pre>
+                <p class="warning">Each <code>li</code> element has <code>data-attribute</code> <strong>period</strong>, which may be any text. This text will write after slider in pagination bar.</p>
+                <p class="question">After all of this slider examples you can use yourself or something new for each types.</p>
+            </div>
+        </section>
+        <!-- /#sliders -->
+
+        <section id="blog" class="content slide">
+            <div>
+                <h2>Blog</h2>
+                <p>Our template contains all needed pages to create fully-worked and oriented for blog pages. Over 8 pages for blog were html-coded and represented for using. Were considered 7 types of posts, standart blog.</p>
+                <ol>
+                    <li>Single Post Photo;</li>
+                    <li>Single Post Text;</li>
+                    <li>Single Post Audio;</li>
+                    <li>Single Post Gallery;</li>
+                    <li>Single Post Link;</li>
+                    <li>Single Post Quote;</li>
+                    <li>Single Post Video.</li>
+                </ol>
+                <p>Inside blog pages markup for articles similar as another pages and, of course, you can use all bootstrap styles too.</p>
+                <h3 id="postaside">Post with Sidebar</h3>
+                <p>To add sidebar for post pages for widgets you have to look at the <a href="../blog_post_sidebar.html" target="_blank">Post Sidebar</a> page. Fixed button, which always visible on screen, when click sidebar will open. Into sidebar you may use and write what you want. In example we added a few standart wordpress markup for widgets.</p>
+                <h3 id="audioplayer">Audio Player</h3>
+                <p>For posts with audio we use powerfull <a href="http://mediaelementjs.com/" target="_blank">MediaElement</a> plugin. HTML5 audio players in pure HTML and CSS.</p>
+                <pre class="snippet" data-language="js">
+                    <audio src="http://demo.aisconverse.com/AirReview-Landmarks-02-ChasingCorporate.mp3" controls="controls"></audio>
+                </pre>
+                <p>To stylize audio player, you can change styles in <code>css/style.css</code> file in appopriate section <strong>[ 22. AUDIO PLAYER ]</strong>.</p>
+                <h3 id="videoplayer">Video Player</h3>
+                <p>For posts with video we use responsive embeded from <a href="http://getbootstrap.com/components/#responsive-embed" target="_blank">Twitter Bootstrap Framework</a>. Rules are directly applied to <code>iframe</code> elements; optionally use an explicit descendant class <code>.embed-responsive-item</code> when you want to match the styling for other attributes.</p>
+                <pre class="snippet" data-language="js">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        &emsp;<iframe class="embed-responsive-item" src=""></iframe>
+                    </div>
+
+                    <!-- 4:3 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-4by3">
+                        &emsp;<iframe class="embed-responsive-item" src=""></iframe>
+                    </div>
+                </pre>
+            </div>
+        </section>
+        <!-- /#blog -->
+
+        <section id="ecommerce" class="content slide">
+            <div>
+                <h2>Ecommerce</h2>
+                <p>About 13 pages marked up specifically for the <strong>ecommerce</strong> catalog. For catalog were created 6 variants:</p>
+                <ol>
+                    <li>Catalog Grid;</li>
+                    <li>Catalog Grid Sidebar Right;</li>
+                    <li>Catalog Grid Sidebar Left;</li>
+                    <li>Catalog List;</li>
+                    <li>Catalog List Sidebar Right;</li>
+                    <li>Catalog List Sidebar Left.</li>
+                </ol>
+                <p>All of this pages contain maincontent with products and 4 pages has filtering sidebar with additional settings. Also project has <code>product.html</code> page with more detail fully information about single product with rating, comments, description, tables and gallery. When you choose needed product you should order him. For this purposes were created additional 4 pages:</p>
+                <ol>
+                    <li>Cart;</li>
+                    <li>Cart Empty;</li>
+                    <li>Checkout;</li>
+                    <li>Confirmation.</li>
+                </ol>
+                <p>Inside ecommerce pages markup for articles similar as another pages and, of course, you can use all bootstrap styles too.</p>
+                <h3 id="rating">Rating</h3>
+                <p>In this project we use a great jQuery plugin - <a href="http://wbotelhos.com/raty/" target="_blank">jQuery Raty</a> - it's A Star Rating Plugin. Very simple to use, and here you can see an example:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- For Static rating block -->
+                    <div class="raty" data-score="4" data-readonly="true"></div>
+
+                    <!-- To choose needed mark -->
+                    <div class="raty"></div>
+                </pre>
+                <p>We use star icons from wonderfull <a href="http://fontawesome.io" target="_blank">FontAwesome</a> service, and you can change 3 types of statements in <code>custom.js</code> file: </p>
+                <a href="../js/custom.js" class="path" target=_blank>js/custom.js</a>
+                <pre class="snippet" data-language="js">
+                    instance.rating.raty({
+                    &emsp;half: true, // to add half stars
+                    &emsp;starType: 'i', // tag element for star
+                    &emsp;starOff: 'fa fa-star-o', // class for empty-star
+                    &emsp;starOn: 'fa fa-star', // class for fill-star
+                    &emsp;starHalf: 'fa fa-star-half-o' // class for half-star
+                    });
+                </pre>
+                <h3 id="prodquantity">Product Quantity</h3>
+                <p>For counting items in cart, change amount for more/less you may use like this structure:</p>
+                <pre class="snippet" data-language="js">
+                    <a href="" class="minus disabled">-</a>
+                    <input type="text" value="1">
+                    <a href="" class="plus">+</a>
+                </pre>
+            </div>
+        </section>
+        <!-- /#ecommerce -->
+
+        <section id="team" class="content slide">
+            <div>
+                <h2>Team</h2>
+                <p><a href="../team.html" target="_blank">Team</a> page contain persons with modal description. Modal window using by <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap Modal</a> plugin. At first, add link for opening modal window. Obligatory data-attribute <code>data-toggle</code> and <code>data-target</code> where you should write id modal window.</p>
+                <pre class="snippet" data-language="js">
+                    <div class="col-sm-3 person">
+                        &emsp;<a href="" data-toggle="modal" data-target="#person-1"><img alt="" src="http://placehold.it/351x150" class="img-circle"></a>
+                        &emsp;<h5>MIKE Jhonson <small>Founder</small></h5>
+                    </div>
+                </pre>
+                <p>Modal window uses general structure for 12-columns and has close link, for hiding modal:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- Modal -->
+                    <div class="modal fade person-modal" id="person-1">
+                        &emsp;<a href="" class="pclose" data-dismiss="modal"></a>
+                        &emsp;<div class="divtable">
+                        &emsp;&emsp;<div class="divcell">
+                        &emsp;&emsp;&emsp;<article class="container text-center">
+                        &emsp;&emsp;&emsp;&emsp;<p>Some Info</p>
+                        &emsp;&emsp;&emsp;</article>
+                        &emsp;&emsp;</div>
+                        &emsp;</div>
+                    </div>
+                    <!-- /.modal -->
+                </pre>
+            </div>
+        </section>
+        <!-- /#team -->
+
+        <section id="magnific" class="content slide">
+            <div>
+                <h2>Magnific Gallery</h2>
+                <p>Here we use brilliant plugin <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a>. Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device. You may put any HTML content in each gallery item and mix content types.</p>
+                <p>The easiest way to create popup media gallery, is add class <code>magnific-wrap</code> for parent block and add class <code>magnific</code> to every link, which you need to show. Attribute <code>href</code> has url to big image. Have a look an example:</p>
+                <pre class="snippet" data-language="js">
+                    <div class="magnific-wrap">
+                        &emsp;<div class="row">
+                        &emsp;&emsp;<div class="col-md-3">
+                        &emsp;&emsp;&emsp;<img src="" alt="">
+                        &emsp;&emsp;&emsp;<a href="http://placehold.it/351x150" title="Becoming" class="magnific mask">
+                        &emsp;&emsp;&emsp;&emsp;<h3>Becoming</h3>
+                        &emsp;&emsp;&emsp;</a>
+                        &emsp;&emsp;</div>
+                        &emsp;&emsp;<div class="col-md-3">
+                        &emsp;&emsp;&emsp;<img src="" alt="">
+                        &emsp;&emsp;&emsp;<a href="http://placehold.it/351x150" title="Jack Kerouac" class="magnific mask">
+                        &emsp;&emsp;&emsp;&emsp;<h3>Jack Kerouac</h3>
+                        &emsp;&emsp;&emsp;</a>
+                        &emsp;&emsp;</div>
+                        &emsp;</div>
+                    </div>
+                </pre>
+                <p class="question">There are many examples in this project you may find inside some pages, like gallery or sliders or blog pages. Popup may contain not only static images, but also youtube or vimeo video, or gallery inside another gallery, have a look:</p>
+                <pre class="snippet" data-language="js">
+                   <a href="http://www.youtube.com/watch?v=aTbG1hG2AFA" class="mask magnific-video" title="C-Sharp Branding">Video Link</a>
+                    …
+                    <a href=""
+                       data-gallery="images/works/portfolio-6-1.jpg, images/works/portfolio-6-2.jpg, images/works/portfolio-6-3.jpg" title="Project Gallery" class="btn magnific-gallery">Gallery</a>
+                </pre>
+                <p class="warning">As you can see for create single gallery for every independent link you have to use <code>data-gallery</code> attribute, where you write array of images, separate by commas.</p>
+            </div>
+        </section>
+        <!-- /#magnific -->
+
+        <section id="counter" class="content slide">
+            <div>
+                <h2>Counter</h2>
+                <p>Counters allow you to see the process of increasing any meaning to the required one when the counter area is in the visible browser screen. There can be several counters. To add a counter to the site, use the following structure:</p>
+                <pre class="snippet" data-language="js">
+                    <div class="countup" data-increment="0.097" data-fractional="3" data-num="9.864">0</div>
+                </pre>
+                <p>For more examples, look at the <a href="../services.html" target="_blank">Services</a> page. Create the <code>div</code> block with the class <strong>countup</strong>, after add obligatory attributes to it:</p>
+                <ul>
+                    <li><strong>data-num</strong> - the final meaning to the size of which the counter will increase;</li>
+                    <li><strong>data-increment</strong> - how necessary it is to increase a counter during every iteration;</li>
+                    <li><strong>data-fractional</strong> - the number of important figures after a comma. If the number is integral, this attribute can be omitted or you can point out 0.</li>
+                </ul>
+                <a href="../css/style.css" class="path" target=_blank>css/style.css</a>
+                <pre class="snippet" data-language="js">
+                    1364 : .countup {
+                    &emsp;&emsp;font-size: 70px;
+                    &emsp;&emsp;line-height: 1.3;
+                    &emsp;&emsp;color: #cccaca;
+                    }
+                </pre>
+            </div>
+        </section>
+        <!-- /#counter -->
+
+        <section id="history" class="content slide">
+            <div>
+                <h2>History</h2>
+                <p>In <a href="../about.html" target="_blank">About</a> page we added interactive historical events. Thanks for it, you can add new year and new event for it.</p>
+                <ol>
+                    <li>At first add new date: add new <code>li</code> with needed year. Date period in the beginning will automatically change;</li>
+                    <li>Add event for this year, using <code>section</code> tag and needed markup into it. For each year appropriate single <code>section</code>;</li>
+                    <li>And now you may click on new year, and appropriate content will show.</li>
+                </ol>
+            </div>
+        </section>
+        <!-- /#history -->
+
+        <section id="gmaps" class="content slide">
+            <div>
+                <h2>Google Maps</h2>
+                <pre class="snippet" data-language="js">
+                    <!-- CONTACT-map -->
+                    <div class="contact-map">
+                        &emsp;<div id="contact-map"></div>
+                    </div>
+                </pre>
+                <p>In <strong>HTML</strong> file you should write only single line, with unique <code>id</code> attribute.</p>
+                <p>To set Google map you need to edit the <code>js/custom.js</code> file. To get the longitude and latitude you can use the <a href="http://itouchmap.com/latlong.html" target="_blank">following service</a>. Click a map and replace a marker into the place you need after switching to a link. Then insert the received coordinates into the <code>js/custom.js</code> file:</p>
+                <a href="../js/custom.js" class="path" target=_blank>js/custom.js</a>
+                <pre class="snippet" data-language="js">
+                    10 : locations: [51.5134476, -0.1159143]
+                    11 : mapZoom: 11
+                </pre>
+                <p>You can also use multiple markers for Google Maps. Enter necessary coordinates into a <code>locationsMarkers</code> variable array.</p>
+                <a href="../js/custom.js" class="path" target=_blank>js/custom.js</a>
+                <pre class="snippet" data-language="js">
+                    685 : locationsMarkers = [
+                    &emsp;&emsp;&emsp;[51.483571, -0.120335],
+                    &emsp;&emsp;&emsp;[51.506656, -0.197239],
+                    &emsp;&emsp;&emsp;[51.511784, -0.107288]
+                    ];
+                </pre>
+                <p class="warning">In <a href="../contact.html" target="_blank">Contact</a> page you may click on <strong>Full Screen</strong> button, and map will open in full screen.</p>
+            </div>
+        </section>
+        <!-- /#gmaps -->
+
+        <section id="portfolio" class="content slide">
+            <div>
+                <h2>Portfolio</h2>
+                <p>You can organize your work according to the preset filters. At first, you create works navigation with category:</p>
+                <pre class="snippet" data-language="js">
+                    <ul class="nav-category">
+                        &emsp;<li><a href="#all" class="filter" data-filter="all">All</a></li>
+                        &emsp;<li><a href="#design" class="filter" data-filter=".design">design</a></li>
+                        &emsp;<li><a href="#furniture" class="filter" data-filter=".furniture">furniture</a></li>
+                        &emsp;<li><a href="#branding" class="filter" data-filter=".branding">branding</a></li>
+                    </ul>
+                </pre>
+                <p>Items of this list have obligatory class <strong>filter</strong> and <code>data-filter</code> attribute. <code>Data-filter</code> helps you divide works on needed category. After navigation create container with class <strong>mix-list</strong>.</p>
+                <pre class="snippet" data-language="js">
+                    <!-- mix-list -->
+                    <ul class="row mix-list">
+                        &emsp;<li class="col-md-3 col-sm-4 col-xs-6 mix design">
+                        &emsp;&emsp;<img src="http://placehold.it/351x150" alt="">
+                        &emsp;&emsp;<a href="" class="mask">
+                        &emsp;&emsp;&emsp;<h6>Bra <small>— Effect —</small></h6>
+                        &emsp;&emsp;</a>
+                        &emsp;</li>
+                        &emsp;<li class="col-md-3 col-sm-4 col-xs-6 mix furniture">
+                        &emsp;&emsp;<img src="http://placehold.it/351x150" alt="">
+                        &emsp;&emsp;<a href="https://vimeo.com/45830194" class="mask magnific-video">
+                        &emsp;&emsp;&emsp;<img src="http://placehold.it/50x50" alt="">
+                        &emsp;&emsp;</a>
+                        &emsp;</li>
+                    </ul>
+                </pre>
+                <p>Each of <strong>mix</strong> block should has filtering class: branding, drawing and etc. Some words about your work. When you click one of the description, full gallery or new page or modal window will open.</p>
+            </div>
+        </section>
+        <!-- /#portfolio -->
+
+        <section id="errorpage" class="content slide">
+            <div>
+                <h2>Error Pages</h2>
+                <p>For special pages, like 404 or 505 use a few another markup. At first, you should add class <code>error404</code> for HTML tag. This pages do not contain header and footer like in another pages. For more details information look at <a href="../404.html" target="_blank">404</a>. By analogy of this pages you may create suitable and needed for your purposes pages.</p>
+            </div>
+        </section>
+        <!-- #errorpage -->
+
+        <section id="forms" class="content slide">
+            <div>
+                <h2>Forms</h2>
+                <h3 id="feedback">Feedback</h3>
+                <p>The feedback can contain the following blocks:</p>
+                <ul>
+                    <li><code>&lt;input type="text"&gt;</code> - a one line standard text area;</li>
+                    <li><code>&lt;input type="email"&gt;</code> - a text area for an e-mail address;</li>
+                    <li><code>&lt;textarea&gt;</code> - a more than one line area for a message;</li>
+                    <li><code>&lt;input type="submit"&gt;</code> - a sending form button;</li>
+                    <li><code>&lt;h4 class="succs-msg"&gt;</code> - delivery report.</li>
+                </ul>
+                <p>Let’s have a look at the example of creating the countdown on the site.</p>
+                <pre class="snippet" data-language="js">
+                    <h3>Contact Form -</h3>
+                    &emsp;<form action="php/email.php" method="post" id="send-form">
+                    &emsp;&emsp;<div class="formwrap">
+                    &emsp;&emsp;&emsp;<div class="form-group">
+                    &emsp;&emsp;&emsp;&emsp;<input type="text" name="name" id="send-form-name" placeholder="Name">
+                    &emsp;&emsp;&emsp;</div>
+                    &emsp;&emsp;&emsp;<div class="form-group">
+                    &emsp;&emsp;&emsp;&emsp;<input type="email" name="email" id="send-form-email" placeholder="Email">
+                    &emsp;&emsp;&emsp;</div>
+                    &emsp;&emsp;&emsp;<div class="form-group">
+                    &emsp;&emsp;&emsp;&emsp;<textarea name="message" placeholder="Message" id="send-form-message"></textarea>
+                    &emsp;&emsp;&emsp;</div>
+                    &emsp;&emsp;</div>
+                    &emsp;&emsp;<button type="submit" class="btn btn-primary btn-wd">Send</button>
+                    &emsp;&emsp;<h4 class="succs-msg">Мessage was sent</h4>
+                    &emsp;</form>
+                </pre>
+                <p>All the areas must be in the <code>form</code> tag. The tag must have obligatory attributes:</p>
+                <ul>
+                    <li><strong>action</strong> - it shows the path to the php-file which deals with processing the form, it remains the same by default;</li>
+                    <li><strong>method</strong> - <strong>post</strong> remains the same by default;</li>
+                    <li><strong>id</strong> - a unique identifier, <strong>send-form</strong> remains the same.</li>
+                </ul>
+                <p>Each area in the form must contain unique forms <strong>id</strong>, the <strong>name</strong> attribute and a not obligatory <strong>placeholder</strong> attribute. Id and name attributes must remain the same as shown above for the proper work and its further processing. The <strong>placeholder</strong> is a text which is shown to the user before inputting the main text in the area.</p>
+                <p>If form areas are filled in the right way, after pressing the button there will appear a message with the class <strong>succs-msg</strong>. This block can be in any place of the page. You can set up an external view in the <code>css/style.css</code> file and it takes styles according to what element the <strong>succs-msg</strong> class is added to. If areas are filled in the incorrect way or aren’t filled at all, the class <strong>has-error</strong> is added to the area that hasn’t been validated. The invalid area style can be changed.</p>
+                <a href="../css/style.css" class="path" target=_blank>css/style.css</a>
+                <pre class="snippet" data-language="js">
+                    1534 : .has-error input[type=text],
+                        .has-error input[type=email],
+                        .has-error input[type=password],
+                        .has-error input[type=search],
+                        .has-error textarea,
+                        input[type=text]:invalid,
+                        input[type=email]:invalid,
+                        input[type=password]:invalid,
+                        input[type=search]:invalid,
+                        textarea:invalid{
+                        &emsp;&emsp;color:#e7543d;
+                        &emsp;&emsp;box-shadow: none;
+                        }
+
+                    1612 : .succs-msg {
+                    &emsp;&emsp;margin-left: 29px;
+                    &emsp;&emsp;line-height:49px;
+                    }
+                </pre>
+                <p class="question">In the <code>php/email.php</code> file you can change the address of message receiving, a message topic, also the whole text that will deliver to the administrator of the site.</p>
+                <ul>
+                    <li><code>define('EMAIL_ADMIN_SENT_TO', 'admin@gmail.com');</code> - an e-mail address to which a letter will be sent for the administrator template;</li>
+                    <li><code>define('EMAIL_ADMIN_SUBJECT', 'Feedback letter from contacts form on Yokko');</code> - the topic of a letter for the administrator template;</li>
+                    <li><code>define('EMAIL_CLIENT_SUBJECT', 'Feedback letter from Yokko');</code> - the topic of a letter for the sender;</li>
+                    <li>line 32 <code>$letterToAdmin = …</code> - the template of a letter for the administrator;</li>
+                    <li>line 44 <code>$letterToClient = …</code> - the template of a letter for the sender;</li>
+                    <li>an e-mail on behalf of whom a letter is sent to the sender: line 13: <code>$headers .= "From: feedback@Yokko.local\r\n";</code>. <strong>\r\n</strong> obligatory to save at the end of the line.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- #forms -->
+
+        <section id="scrtop" class="content slide">
+            <div>
+                <h2>Scrolltop Button</h2>
+                <p>To scroll the template up, to its beginning, there is a special button that appears by scrolling the page down. Its code is:</p>
+                <pre class="snippet" data-language="js">
+                    <!-- ScrollTop Button -->
+                    <a href="#" class="scrolltop">
+                        &emsp;<i class="custom-icon custom-icon-scrolltop"></i>
+                    </a>
+                </pre>
+                <p>To change its external view you need to edit the <code>css/style.css</code> file. You can also change the external view of a cursor by replacing a standard image or creating a path to the new one.</p>
+                <a href="../css/style.css" class="path" target=_blank>css/style.css</a>
+                <pre class="snippet" data-language="js">
+                    2156 : .scrolltop {
+                    &emsp;&emsp;border-radius: .5rem;
+                    &emsp;&emsp;width: 60px;
+                    &emsp;&emsp;height: 60px;
+                    &emsp;&emsp;left: 65px;
+                    &emsp;&emsp;bottom: 65px;
+                    }
+
+                    932 : .scrolltop:before {
+                    &emsp;&emsp;background-color: #808080;
+                    &emsp;&emsp;opacity: .1;
+                    &emsp;&emsp;border-radius: 3px;
+                    }
+                </pre>
+            </div>
+        </section>
+        <!-- /#scrtop -->
+
+        <section id="font-settings" class="content slide last">
+            <div>
+                <h2>Font Settings</h2>
+                <p>To change the font-family you will have to edit the file <code>css/style.css</code>. If the font is a standard one, built the system by default, you can just write it here.</p>
+                <pre class="snippet" data-language="js">
+                    6 : html { font-family: 'Arial', sans-serif;  } // or whatever you want (e.g. "Helvetica")
+                </pre>
+                <p class="warning">Also you can use <a href="http://www.google.com/fonts" target="_blank" title="Google Font">Google Font</a> and connect it to your website.</p>
+                <ol>
+                    <li>Go to <a href="http://www.google.com/fonts" target="_blank">http://www.google.com/fonts</a>.</li>
+                    <li>Choose the appropriate font.</li>
+                    <li>Click the <strong>Quick-use</strong> button (<img src="images/quick_use_static.png" alt="">).</li>
+                    <li>Choose the styles that you want;</li>
+                    <li>Choose the character sets that you want.</li>
+                    <li>Below that click on the @import tab and copy this line.</li>
+                    <li>Paste this line to that <code>css/typography.css</code> file on 3d line instead of the default (e.g.):
+                        <pre class="snippet" data-language="css">
+                            3 : @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+                        </pre>
+                    </li>
+                    <li>At last, copy font-family name from Google Fonts website and paste on <code>css/style.css</code>:
+                        <pre class="snippet" data-language="js">
+                            html { font-family: 'Open Sans', sans-serif;  }
+                        </pre>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- /#font-settings -->
+
+        <footer id="footer">
+            <p>&copy; 2008-2014 <a href="http://aisconverse.com" target="_blank">Aisconverse</a>. All Rights Reserved.</p>
+        </footer>
+        <!-- /#footer -->
+
+	</section>
+    <!-- /#main -->
+</div>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46302488-11', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
