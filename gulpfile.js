@@ -35,7 +35,7 @@ gulp.task('styles', function() {
         html: ['index.html']
     }))
     // .pipe(rename({ suffix: '.min' }))
-    // .pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest('public/css'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
