@@ -5031,7 +5031,7 @@ img.mfp-img {
 @media screen and (max-width: 980px){
 
     .home .header{
-        padding-bottom: 50px;
+        padding-bottom: 0;
     }
 
     h1, .h1, .home h1{
@@ -5619,6 +5619,27 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 480px) {
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .page-header+.container {
+        padding-bottom: 0;
+    }
+
+    figure {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+
+    header.header:first-child > .container {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
     .mainmenu .navbar-collapse{
         width: 320px;
         padding: 75px 25px 10px;
@@ -5704,7 +5725,11 @@ img.mfp-img {
     .post h1,
     .post h1 a{
         margin-left: -10px;
+        font-size: 150%;
+        margin-top: 40px;
+        text-align: center;
     }
+    
 
     .post small:first-child{
         margin-bottom: 30px;
