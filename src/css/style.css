@@ -259,6 +259,10 @@ table,
     margin-top: 80px;
 }
 
+.row.margin-top {
+    margin-top: 50px;
+}
+
 .container.padding-top-zero {
     padding-top: 0;
 }
@@ -284,9 +288,11 @@ figure {
 }
 
 img.full-width {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .comments .comment .col-sm-3 p {
@@ -954,7 +960,7 @@ ul.pagination .next:hover{
 }
 
 .logo{
-    font-size: 38px;
+    /*font-size: 38px;*/
     line-height: 34px;
     margin-top: 3px;
     color: #333;
@@ -962,6 +968,9 @@ ul.pagination .next:hover{
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
+
+    font-size: 23px;
+    z-index: 999999999999;
 }
 
 .header.navbar-fixed-top .logo{
@@ -5729,7 +5738,7 @@ img.mfp-img {
         margin-top: 40px;
         text-align: center;
     }
-    
+
 
     .post small:first-child{
         margin-bottom: 30px;
