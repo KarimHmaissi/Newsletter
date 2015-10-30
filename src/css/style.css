@@ -283,7 +283,7 @@ table,
 
 
 figure {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-top: 40px;
 }
 
@@ -303,6 +303,8 @@ img.full-width {
 article.post {
     padding-bottom: 0;
 }
+
+
 
 /*------------------------------------------------------------------
 [ 1. LAYOUT ]
@@ -372,6 +374,12 @@ hr{
 .inline{
     display: inline-block;
 }
+
+.comments ul.bullets li a {
+    color: black;
+}
+
+ul.bullets {list-style: circle;padding-left: 20px;}
 
 /*------------------------------------------------------------------
 [ 2. TYPOGRAPHY ]
@@ -1083,10 +1091,10 @@ ul.pagination .next:hover{
     color: #e7543d !important;
     background-color: transparent;
 }
-
+/*
 .mainmenu .navbar-nav{
     margin-right: -40px;
-}
+}*/
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
     background-color: transparent;
@@ -1141,7 +1149,49 @@ ul.pagination .next:hover{
     background-color: #e7543d;
 }
 
-@media (min-width: 980px) {
+
+@media (max-width: 750px) {
+
+
+    .nav>li {
+        float: none !important; 
+        display: inline-block !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mainmenu .navbar-nav {
+        float: none !important;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    .pclose {
+        display: none;
+    }
+
+    body nav #navbar-collapse {
+        float: none !important;
+    }
+}
+
+
+
+@media (min-width: 751px) {
+
+
+    .nav>li {
+        float: left !important; 
+
+    }
+
+}
+
+
+/*@media (min-width: 980px) {
     .mainmenu ul.navbar-nav > li.current-menu-item:after{
         position: absolute;
         width: 26px;
@@ -1154,6 +1204,9 @@ ul.pagination .next:hover{
         top: -29px;
         margin-left: -14px;
     }
+
+    
+
 
     .navbar-fixed-top .mainmenu ul.navbar-nav > li.current-menu-item:after{
         display: none;
@@ -1174,7 +1227,7 @@ ul.pagination .next:hover{
     .no-mobile .cart-list:hover > .dropdown-menu{
         display: block;
     }
-}
+}*/
 
 
 /* [ 5.3. Menu Cart ] */
@@ -3838,7 +3891,7 @@ a.add-review:hover{
 
 .post small:first-child{
     margin-top: -15px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .post small a{
@@ -4032,7 +4085,10 @@ a.add-review:hover{
 }
 
 .comments-area .comment-line a{
-    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    text-transform: none;
 }
 
 .addcomment{
@@ -5638,7 +5694,7 @@ img.mfp-img {
     }
 
     figure {
-        margin-bottom: 30px;
+        margin-bottom: 0;
         margin-top: 20px;
     }
 
