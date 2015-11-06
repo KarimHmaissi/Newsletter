@@ -139,7 +139,7 @@
                 <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Email address" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_6ee43b657679a6c3938cc6293_3ceef9dcb5" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-1" class="button btn btn-default"></div>
                 </div>
             </form>
             </div>
@@ -311,7 +311,7 @@
                 <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Email address" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_6ee43b657679a6c3938cc6293_3ceef9dcb5" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-2" class="button btn btn-default"></div>
                 </div>
             </form>
             </div>
@@ -356,6 +356,39 @@
 </script>
 
 <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+
+
+<script type="text/javascript">
+
+    "use strict";
+    // events
+    var trackEventGA = function (category, action, label, value) {
+        if(typeof (_gaq) !== "undefined") {
+            _gaq.push(["_trackEvent", category, action, label, value]);
+        }
+
+        if(typeof (ga) !== "undefined") {
+            ga.send("send", "event", category, action, label, value);
+        }
+    }
+
+
+    var submitButton = document.getElementById("mc-embedded-subscribe-1");
+    var submitButton2 = document.getElementById("mc-embedded-subscribe-2");
+
+    submitButton.addEventListener("click", function () {
+       trackEventGA("Newsletter", "Submit 1 Clicked");
+    });
+
+    submitButton2.addEventListener("click", function () {
+       trackEventGA("Newsletter", "Submit 2 Clicked");
+    });
+
+
+
+
+
+</script>
 
 
 
