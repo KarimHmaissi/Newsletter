@@ -32,7 +32,7 @@ gulp.task('styles', function() {
     // .pipe(gulp.dest('public/stylesheets'))
     .pipe(concat('stylesMaster.min.css'))
     .pipe(uncss({
-        html: ['index.html']
+        html: ['index.html', 'contact.html']
     }))
     // .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
